@@ -5,6 +5,19 @@
   padding: 120px 0;
   z-index: -1;
 }
+#joinCondition::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: 30px;
+  width: 500px;
+  height: 400px;
+  background-image: url('../image/poroImage03.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
 #joinCondition > .joinCondition__inner {
 
 }
