@@ -1,0 +1,45 @@
+#intro {
+  font-family: "GmarketSans";
+  position: relative;
+  height: 100vh;
+  background-color: #3b95ff;
+}
+#intro > .intro__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#intro > .intro__inner > .intro__titleBox {
+  margin-right: 50px;
+}
+#intro > .intro__inner > .intro__titleBox > h1 {
+  margin-bottom: 50px;
+  font-size: 90px;
+  color: #fff;
+  line-height: 1.2;
+}
+#intro > .intro__inner > .intro__titleBox > h1 > em {
+  font-weight: 600;
+  text-shadow: 0 0 10px #0257b8;
+}
+#intro > .intro__inner > .intro__titleBox > p {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+#intro > .intro__inner > .intro__titleBox > p > em {
+  font-weight: 400;
+}
+
+#intro > .intro__inner > .intro__poroImage {
+  width: 500px;
+  height: 404px;
+  background-image: url("../image/poroImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

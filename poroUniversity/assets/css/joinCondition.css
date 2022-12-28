@@ -1,0 +1,87 @@
+#joinCondition {
+  position: relative;
+  font-family: "GmarketSans";
+  /* background-image: url('../image/joinCondition_background.png'); */
+  padding: 120px 0;
+  z-index: -1;
+}
+#joinCondition > .joinCondition__inner {
+
+}
+#joinCondition > .joinCondition__inner > h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+#joinCondition > .joinCondition__inner > h3 > em {
+  position: relative;
+  font-weight: 600;
+}
+#joinCondition > .joinCondition__inner > h3 > em::before {
+  position: absolute;
+  bottom: 5px;
+  content: "";
+  width: 100%;
+  height: 10px;
+  background: #3b95ff;
+  z-index: -1;
+}
+#joinCondition > .joinCondition__inner > p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box {
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > article {
+  box-sizing: border-box;
+  padding: 50px;
+  width: 33.33333333333333%;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > article > h5 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > article > h5 > em {
+  font-size: 16px;
+  color: #bad9ff;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > article > p {
+  font-weight: 300;
+  line-height: 1.4;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > article > p > em {
+  font-weight: 400;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .adult_box {
+  background-color: #57a4ff;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .adult_box > .adult_ico {
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/joinCondition_ico.svg');
+    margin-bottom: 20px;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .discord_box {
+  background: #3994ff;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .discord_box > .discord_ico {
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/joinCondition_ico.svg');
+    background-position: -60px;
+    margin-bottom: 20px;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .level_box {
+  background: #1b80f8;
+}
+#joinCondition > .joinCondition__inner > .joinCondition__box > .level_box > .level_ico {
+    width: 50px;
+    height: 50px;
+    background-image: url('../image/joinCondition_ico.svg');
+    background-position: -120px;
+    margin-bottom: 20px;
+}
