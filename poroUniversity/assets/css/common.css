@@ -42,3 +42,19 @@ html {
   color: #fff;
   background-color: #3b95ff;
 }
+
+/* footer */
+#footer {
+  font-family: "GmarketSans";
+  background-image: url("../image/footerImage.png");
+}
+#footer > .footer__inner {
+}
+#footer > .footer__inner > p {
+  box-sizing: border-box;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.4;
+}
