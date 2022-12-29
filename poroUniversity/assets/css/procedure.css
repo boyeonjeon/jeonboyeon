@@ -1,8 +1,11 @@
 #procedure {
+  position: relative;
+
   padding: 120px 0;
   font-family: "GmarketSans";
   color: #333;
 }
+
 #procedure > .procedure__inner {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +64,7 @@
   color: #ff9e0c;
 }
 .first__box > p {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .first__box > p > strong {
   font-weight: 600;
@@ -76,12 +79,12 @@
   background: #ffc90c;
 }
 .first__box > button > a {
-    display: flex;
-    align-items: center;
-    color: #8D5500;
+  display: flex;
+  align-items: center;
+  color: #8d5500;
 }
 .first__box > button > a > img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .second__box > h5 {
@@ -103,4 +106,17 @@
 }
 .fourth__box > p > em {
   color: #6f4fe9;
+}
+
+.crab__image {
+    position: absolute;
+    left: 80px;
+    bottom: 50px;
+    width: 500px;
+    height: 500px;
+    background-image: url('../image/crabImage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
 }
