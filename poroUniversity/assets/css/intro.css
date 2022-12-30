@@ -24,16 +24,46 @@
   font-size: 90px;
   color: #fff;
   line-height: 1.2;
+  opacity: 0;
+  animation: appear 0.8s 0.1s ease-in forwards;
 }
 #intro > .intro__inner > .intro__titleBox > h1 > em {
   font-weight: 600;
   text-shadow: 0 0 10px #0257b8;
+
+  opacity: 0;
+  animation: appear 0.8s 0.1s ease-in forwards;
+}
+
+@keyframes appear {
+  0% {
+    margin-left: -50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #intro > .intro__inner > .intro__titleBox > p {
+  position: relative;
   font-size: 25px;
   font-weight: 300;
   color: #fff;
+  opacity: 0;
+
+  animation: appear-up 0.5s 1s ease-in forwards;
 }
+@keyframes appear-up {
+  0% {
+    top: 10px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 #intro > .intro__inner > .intro__titleBox > p > em {
   font-weight: 400;
 }
@@ -45,6 +75,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  opacity: 0;
+
+  animation: appear-bounce 0.5s 1.8s ease-in forwards;
+}
+@keyframes appear-bounce {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #intro > .intro__circle01 {
