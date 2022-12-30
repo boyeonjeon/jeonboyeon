@@ -47,6 +47,9 @@ html {
 #footer {
   font-family: "GmarketSans";
   background-image: url("../image/footerImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #footer > .footer__inner {
 }
@@ -70,4 +73,12 @@ html {
     border-radius: 50px;
     transition: color 0.3s, background-color 0.3s;
   }
+}
+/* footer 반응형 */
+@media (max-width: 480px) {
+  #footer > .footer__inner > p {
+    padding: 20px;
+    line-height: 1.6;
+    font-size: 13px;
+}
 }

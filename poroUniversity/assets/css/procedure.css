@@ -109,14 +109,37 @@
 }
 
 .crab__image {
-    position: absolute;
-    left: 80px;
-    bottom: 50px;
-    width: 500px;
-    height: 500px;
-    background-image: url('../image/crabImage.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
+  position: absolute;
+  left: 80px;
+  bottom: 50px;
+  width: 500px;
+  height: 500px;
+  background-image: url("../image/crabImage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media (max-width: 480px) {
+  #procedure > .procedure__inner > h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  #procedure > .procedure__inner > .procedure__image {
+    width: 250px;
+    height: 350px;
+    margin-right: 0;
+  }
+  #procedure > .procedure__inner > .procedureSequence__box > article > h5 {
+    font-size: 18px;
+  }
+  #procedure > .procedure__inner > .procedureSequence__box > article > p {
+    font-size: 13px;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+  .crab__image {
+    display: none;
+  }
 }

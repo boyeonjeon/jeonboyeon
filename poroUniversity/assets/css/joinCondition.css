@@ -3,7 +3,7 @@
   font-family: "GmarketSans";
   /* background-image: url('../image/joinCondition_background.png'); */
   padding: 120px 0;
-
+  z-index: -1;
   background-color: #d7e9ff;
 }
 #joinCondition::before {
@@ -108,11 +108,11 @@
     margin-bottom: 10px;
   }
   #joinCondition > .joinCondition__inner > p {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 50px;
   }
   #joinCondition > .joinCondition__inner > .joinCondition__box > article > p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     word-break: keep-all;
     line-height: 1.6;

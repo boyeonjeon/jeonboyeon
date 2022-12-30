@@ -24,7 +24,7 @@
   content: "";
   width: 100%;
   height: 10px;
-  background: #FF7C95;
+  background: #ff7c95;
   z-index: -1;
 }
 #restrictedCondition > .restrictedCondition__inner > p {
@@ -48,7 +48,7 @@
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > article > h5 > em {
   font-size: 16px;
-  color: #FFBADB;
+  color: #ffbadb;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > article > p {
   font-weight: 300;
@@ -58,7 +58,7 @@
   font-weight: 400;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .double_box {
-  background-color: #FF7C95;
+  background-color: #ff7c95;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .double_box > .double_ico {
   width: 50px;
@@ -68,7 +68,7 @@
   margin-bottom: 20px;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .madman_box {
-  background: #FF6482;
+  background: #ff6482;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .madman_box > .madman_ico {
   width: 50px;
@@ -78,7 +78,7 @@
   margin-bottom: 20px;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .blame_box {
-  background: #FF4367;
+  background: #ff4367;
 }
 #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .blame_box > .blame_ico {
   width: 50px;
@@ -86,4 +86,46 @@
   background-image: url("../image/joinCondition_ico.svg");
   background-position: -300px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  #restrictedCondition > .restrictedCondition__inner > h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  #restrictedCondition > .restrictedCondition__inner > p {
+    font-size: 13px;
+    margin-bottom: 50px;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > article > p {
+    font-size: 13px;
+    text-align: center;
+    word-break: keep-all;
+    line-height: 1.6;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .double_box {
+    width: 100%;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .madman_box {
+    width: 100%;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .blame_box {
+    width: 100%;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .double_box > .double_ico {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .madman_box > .madman_ico {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > .blame_box > .blame_ico {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #restrictedCondition > .restrictedCondition__inner > .restrictedCondition__box > article > h5 {
+    text-align: center;
+    font-size: 20px;
+  }
 }
