@@ -1,9 +1,10 @@
 #introduction {
   font-family: "GmarketSans";
   color: #333;
-  height: 100vh;
+  /* height: 100vh; */
   box-sizing: border-box;
   padding: 120px 0;
+  overflow: hidden;
 }
 #introduction > .introduction__inner {
   position: relative;
@@ -110,4 +111,64 @@
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   z-index: -2;
+}
+
+@media (max-width: 480px) {
+  #introduction > .introduction__inner > .introduction__Box {
+    padding: 120px 0;
+  }
+  #introduction > .introduction__inner > .introduction__Box > h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 50px;
+    line-height: 1.2;
+  }
+  #introduction > .introduction__inner > .introduction__Box > h2::before {
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #introduction > .introduction__inner > .introduction__Box > h2 > em::before {
+    height: 10px;
+    bottom: 5px;
+  }
+  #introduction > .introduction__inner > .introduction__Box > .introduction__desc > p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  #introduction > .introduction__inner > .introduction__Box > .introduction__desc > p > strong {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  #introduction > .introduction__inner > .introduction__Box > .introduction__desc > span {
+    text-align: center;
+    font-size: 14px;
+    word-break: keep-all;
+  }
+
+  #introduction > .introduction__inner > .introduction__leftBar01 {
+    width: 200px;
+    height: 30px;
+  }
+  #introduction > .introduction__inner > .introduction__leftBar02 {
+    bottom: 50px;
+    width: 300px;
+    height: 30px;
+  }
+  #introduction > .introduction__inner > .introduction__rightBar01 {
+    width: 200px;
+    height: 30px;
+  }
+  #introduction > .introduction__inner > .introduction__rightBar02 {
+    top: 50px;
+    width: 300px;
+    height: 30px;
+  }
 }

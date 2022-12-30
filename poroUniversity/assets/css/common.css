@@ -58,3 +58,16 @@ html {
   font-weight: 300;
   line-height: 1.4;
 }
+
+/* header 반응형 */
+@media (max-width: 480px) {
+  #header > .header__inner > #nav > ul > li > a {
+    font-size: 11px;
+    margin: 0 2px;
+    padding: 3px 5px;
+    color: #3b95ff;
+    border: 1px solid #3b95ff;
+    border-radius: 50px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+}
