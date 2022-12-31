@@ -43,7 +43,6 @@
             markers: false,
             scrub: 2,
           },
-          y: -20,
           opacity: 0,
           duration: 2,
           ease: "power3",
@@ -133,11 +132,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-20% 20%",
-            end: "0",
+            start: "-40% 50%",
+            end: "10%",
             markers: false,
             scrub: 2,
           },
+          y:-20,
           x: -50,
           opacity: 0,
           duration: 2,
@@ -153,7 +153,7 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "0% 30%",
+            start: "-50% 50%",
             end: "40%",
             markers: false,
             scrub: 2,
@@ -172,7 +172,7 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "10% 35%",
+            start: "-20% 50%",
             end: "40%",
             markers: false,
             scrub: 2,
@@ -191,7 +191,7 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "0% 30%",
+            start: "-50% 50%",
             end: "40%",
             markers: false,
             scrub: 2,
@@ -210,7 +210,7 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "10% 35%",
+            start: "-20% 50%",
             end: "40%",
             markers: false,
             scrub: 2,
@@ -229,12 +229,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-15% 20%",
-            end: "5%",
+            start: "-20% 30%",
+            end: "20%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power4",
@@ -247,12 +247,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-15% 20%",
-            end: "5%",
+            start: "-20% 30%",
+            end: "20%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power3",
@@ -265,12 +265,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-10% 10%",
-            end: "5%",
+            start: "-10% 30%",
+            end: "30%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power3",
@@ -283,12 +283,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-10% 10%",
-            end: "5%",
+            start: "-10% 30%",
+            end: "30%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power3",
@@ -301,12 +301,12 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-5% 0",
-            end: "5%",
+            start: "0 20%",
+            end: "20%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power3",
@@ -319,15 +319,265 @@
         {
           scrollTrigger: {
             trigger: "#introduction",
-            start: "-5% 0",
-            end: "5%",
+            start: "0 20%",
+            end: "20%",
             markers: false,
             scrub: 2,
           },
-          y: -30,
+          y: -50,
           opacity: 0,
           duration: 2,
           ease: "power3",
         },
         0
       );
+
+      // 섹션 03
+      let joinCondition_end = gsap.timeline({delay: 1});
+      introduction_end.to(
+        "#joinCondition",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "70% 30%",
+            end: "100%",
+            markers: false,
+            scrub: 2,
+          },
+          y:-20,
+          opacity: 0,
+          duration: 2,
+          ease: "power4",
+        },
+        0
+      );
+
+      let joinCondition = gsap.timeline({delay: 1});
+      introduction.from(
+        "#joinCondition",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "0% 50%",
+            end: "20%",
+            markers: false,
+            scrub: 2,
+          },
+          duration: 2,
+          ease: "power4",
+        },
+        0
+      );
+
+      let joinCondition_poro = gsap.timeline({delay: 1});
+      joinCondition_poro.from(
+        ".joinCondition_poro",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "-50% 50%",
+            end: "-50%",
+            markers: false,
+            scrub: 2,
+          },
+          scale: 0.9,
+          opacity: 0,
+          duration: 2,
+          ease: "bounce.out"
+        },
+        0
+      );
+
+      let joinCondition_title = gsap.timeline({delay: 1});
+      joinCondition_title.from(
+        ".joinCondition_title",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "-40% 50%",
+            end: "-50%",
+            markers: false,
+            scrub: 2,
+          },
+          y:-20,
+          opacity: 0,
+          duration: 2,
+          ease: "power3"
+        },
+        0
+      );
+
+      
+      let joinCondition_subTitle = gsap.timeline({delay: 1});
+      joinCondition_subTitle.from(
+        ".joinCondition_subTitle",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "-20% 50%",
+            end: "-50%",
+            markers: false,
+            scrub: 2,
+          },
+          y:-20,
+          opacity: 0,
+          duration: 2,
+          ease: "power3"
+        },
+        0
+      );
+
+      let adult_box = gsap.timeline({delay: 1});
+      adult_box.from(
+        ".adult_box",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "0 50%",
+            end: "-10%",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-100,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
+      let discord_box = gsap.timeline({delay: 1});
+      discord_box.from(
+        ".discord_box",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "10% 50%",
+            end: "0",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-200,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
+      let level_box = gsap.timeline({delay: 1});
+      level_box.from(
+        ".level_box",
+        {
+          scrollTrigger: {
+            trigger: "#joinCondition",
+            start: "20% 50%",
+            end: "10%",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-300,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
+      // 섹션 04
+      let restrictedCondition_title = gsap.timeline({delay: 1});
+      restrictedCondition_title.from(
+        ".restrictedCondition_title",
+        {
+          scrollTrigger: {
+            trigger: "#restrictedCondition",
+            start: "-40% 50%",
+            end: "-50%",
+            markers: false,
+            scrub: 2,
+          },
+          y:-20,
+          opacity: 0,
+          duration: 2,
+          ease: "power3"
+        },
+        0
+      );
+
+      
+      let restrictedCondition_subTitle = gsap.timeline({delay: 1});
+      restrictedCondition_subTitle.from(
+        ".restrictedCondition_subTitle",
+        {
+          scrollTrigger: {
+            trigger: "#restrictedCondition",
+            start: "-20% 50%",
+            end: "-50%",
+            markers: false,
+            scrub: 2,
+          },
+          y:-20,
+          opacity: 0,
+          duration: 2,
+          ease: "power3"
+        },
+        0
+      );
+
+      let double_box = gsap.timeline({delay: 1});
+      double_box.from(
+        ".double_box",
+        {
+          scrollTrigger: {
+            trigger: "#restrictedCondition",
+            start: "0 50%",
+            end: "-10%",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-100,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
+      let madman_box = gsap.timeline({delay: 1});
+      madman_box.from(
+        ".madman_box",
+        {
+          scrollTrigger: {
+            trigger: "#restrictedCondition",
+            start: "10% 50%",
+            end: "0",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-200,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
+      let blame_box = gsap.timeline({delay: 1});
+      blame_box.from(
+        ".blame_box",
+        {
+          scrollTrigger: {
+            trigger: "#restrictedCondition",
+            start: "20% 50%",
+            end: "10%",
+            markers: true,
+            scrub: 1.5,
+          },
+          x:-300,
+          opacity: 0,
+          duration: 1.5,
+          ease: "power4"
+        },
+        0
+      );
+
